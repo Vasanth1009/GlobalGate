@@ -1,5 +1,5 @@
 'use client';
-import Footer from './components/Footer';
+import Footer from './components/Home/Footer';
 import Event from './components/Home/Event';
 import Features from './components/Home/Features';
 import Header from './components/Home/Header';

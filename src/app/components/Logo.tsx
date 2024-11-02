@@ -7,9 +7,7 @@ function Logo({ scrolled = false }: any) {
         <svg
           viewBox="0 0 120 50"
           xmlns="http://www.w3.org/2000/svg"
-          className={`h-10 w-10 fill-black group-hover:fill-primary transition duration-500 ease-in-out ${
-            scrolled ? 'md:h-10 md:w-10' : 'md:h-20 md:w-20'
-          }`}
+          className={`h-10 w-10 fill-black group-hover:fill-primary transition duration-500 ease-in-out `}
         >
           <path
             fillRule="evenodd"

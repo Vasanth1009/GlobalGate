@@ -1,16 +1,13 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import SwiperSliderContainer from './SwiperSliderContainer';
+import { productsByCategory } from '@/app/utils/utils';
 
 export default function SwiperSlider({ collection }: any) {
   const [products, setProducts] = useState<any>([]);
-  const fetchProducts = async () => {
-    const response = await fetch(
-      `https://dummyjson.com/products/category/${collection}`
-    );
-    const data = await response.json();
-    console.log(data);
-    setProducts(data.products.slice(0, 7));
+  const fetchProducts = () => {
+    const data = productsByCategory[`${collection}`];
+    setProducts(data);
   };
   useEffect(() => {
     fetchProducts();

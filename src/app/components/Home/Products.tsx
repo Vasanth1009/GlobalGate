@@ -4,14 +4,8 @@ import clsx from 'clsx';
 import SwiperSlider from '../Product/SwiperSlider';
 
 export default function Products() {
-  // const collections = ['Men', 'Women', 'Kids', 'Accessories'] as const;
-  const collections = [
-    'beauty',
-    'groceries',
-    'furniture',
-    'fragrances',
-  ] as const;
-  const [activeCollection, setActiveCollection] = useState<any>('beauty');
+  const collections = ['kids', 'mens', 'womens', 'accessories'] as const;
+  const [activeCollection, setActiveCollection] = useState<any>('kids');
   return (
     <div className="products-outer-container">
       <div className="subtitle">

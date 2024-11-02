@@ -324,13 +324,13 @@
   }
 
   .newsletter button {
-    @apply bg-[#000] p-[10px_20px] text-[.9rem] font-semibold leading-[16px] text-[#fff] max-lg-1k:p-[10px_40px];
+    @apply p-[10px_20px] text-[.9rem] font-semibold leading-[16px] text-[#fff] max-lg-1k:p-[10px_40px];
   }
 
   .footer,
   .event-container,
   .products-outer-container {
-    @apply p-[4rem_8rem] max-2xl-12p:p-[2rem_6rem] max-xl-12:p-[4rem] max-md-650:p-[4rem_2rem];
+    @apply p-[4rem_8rem] max-2xl-12p:p-[2rem_6rem] max-xl-12:p-[4rem] max-md-650:p-[4rem_2rem] border-t-2 border-gray-100;
   }
 
   .footer {
@@ -349,15 +349,6 @@
   .footer p {
     @apply text-[1rem] font-normal leading-[22px] text-[#666];
   }
-
-  .icon-container {
-    @apply flex gap-4;
-  }
-
-  .icon-container div {
-    @apply cursor-pointer rounded-[10px] bg-black p-[10px_12px];
-  }
-
   .footer-links h3 {
     @apply text-[1.2rem] font-bold leading-[19px] tracking-[.02em] text-[#666];
   }
@@ -380,15 +371,15 @@
   }
 
   .copyright {
-    @apply mt-24 grid grid-cols-[auto_auto_auto] border-t-[1px] border-solid border-[#666] max-lg-1k:mt-0 max-lg-1k:grid-cols-2 max-md-650:grid-cols-1;
+    @apply mt-24 flex justify-between items-center border-t-[1px] border-solid border-gray-200 max-lg-1k:mt-0 max-md-650:flex-col;
   }
 
   .copyright p {
     @apply m-[1.5rem_8rem] max-lg-1k:m-[0.8rem_2rem];
   }
 
-  .copyright span {
-    @apply text-base font-bold leading-[15px] text-[#212121];
+  .copyright .icon-container {
+    @apply m-[1rem_8rem] flex gap-4;
   }
 
   .Allproducts-container,

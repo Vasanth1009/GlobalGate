@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import LogoImage from '/public/Logo.svg';
 import { TfiFacebook, TfiLinkedin } from 'react-icons/tfi';
+import { Button } from '@nextui-org/react';
 
 function Footer() {
   return (
@@ -13,14 +14,6 @@ function Footer() {
             Small, artisan label that offers a thoughtfully curated collection
             of high quality everyday essentials made.
           </p>
-          <div className="icon-container">
-            <div className="duration-300 hover:bg-[#3b5998]">
-              <TfiFacebook width={20} height={20} fill="white" color="white" />
-            </div>
-            <div className="duration-300 hover:bg-[#0072b1]">
-              <TfiLinkedin width={20} height={20} fill="white" color="white" />
-            </div>
-          </div>
         </div>
         <div className="footer-links">
           <h3>Company</h3>
@@ -49,20 +42,15 @@ function Footer() {
         </div>
       </div>
       <div className="copyright">
-        <p>Copyright &copy; {new Date().getFullYear()} Dine Market</p>
-        <p>
-          Design by. <span>Weird Design Studio</span>
-        </p>
-        <p>
-          Code by.
-          <span>
-            <a href="https://github.com/saadfrhan/nextjs-marketplace">
-              {' '}
-              saadfrhan
-            </a>{' '}
-            on github
-          </span>
-        </p>
+        <p>&copy; Copyright {new Date().getFullYear()} - GLOBAL GATE</p>
+        <div className="icon-container">
+          <div className="text-primary p-4 text-center rounded-full cursor-pointer hover:bg-secondary">
+            <TfiFacebook width={20} height={20} />
+          </div>
+          <div className="text-primary p-4 text-center rounded-full cursor-pointer hover:bg-secondary">
+            <TfiLinkedin width={20} height={20} />
+          </div>
+        </div>
       </div>
     </footer>
   );
