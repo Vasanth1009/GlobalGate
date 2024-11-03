@@ -1,9 +1,15 @@
-import { Quicksand } from 'next/font/google';
+import { Quicksand, Rubik_Wet_Paint } from 'next/font/google';
 import localFont from 'next/font/local';
 
 export const quickSand = Quicksand({
   subsets: ['latin'],
   variable: '--font-quicksand',
+});
+
+export const rubik = Rubik_Wet_Paint({
+  subsets: ['latin'],
+  variable: '--font-rubik',
+  weight: '400'
 });
 
 export const geistSans = localFont({

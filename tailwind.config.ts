@@ -28,6 +28,7 @@ const config: any = {
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
         quicksand: ['var(--font-quicksand)'],
+        rubik: ['var(--font-rubik)'],
         geistSans: ['var(--font-geist-sans)'],
         geistMono: ['var(--font-geist-mono)'],
       },

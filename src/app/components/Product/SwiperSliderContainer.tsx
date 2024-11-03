@@ -31,7 +31,7 @@ export default function SwiperSliderContainer({ products }: any) {
       navigation
     >
       <div className="products-container">
-        {products.map(({ title, thumbnail }, index) => (
+        {products?.map(({ title, thumbnail }, index) => (
           <SwiperSlide key={index}>
             <ProductSlideCard thumbnail={thumbnail} title={title} />
           </SwiperSlide>

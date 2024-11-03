@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Navbar from './components/Navigation/Navbar';
 
 const NotFound = () => {
   return (
     <>
-      <div className="flex flex-col h-screen justify-center items-center gap-10">
+      <Navbar />
+      <div className="flex flex-col mt-20 justify-center items-center gap-10 max-lg-1k:mt-20">
         <h1 className="text-2xl">Oops! Page Not Found</h1>
         <Image
           src="/404.svg"

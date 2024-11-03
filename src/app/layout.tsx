@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Providers } from './providers';
-import { geistMono, geistSans, quickSand } from './font';
+import { geistMono, geistSans, quickSand, rubik } from './font';
 
 export const metadata: Metadata = {
   title: 'Create Next App',

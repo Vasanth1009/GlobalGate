@@ -4,13 +4,13 @@ import clsx from 'clsx';
 import SwiperSlider from '../Product/SwiperSlider';
 
 export default function Products() {
-  const collections = ['kids', 'mens', 'womens', 'accessories'] as const;
+  const collections = ['kids', 'men', 'women'] as const;
   const [activeCollection, setActiveCollection] = useState<any>('kids');
   return (
-    <div className="products-outer-container">
+    <div className="products-container" id="products">
       <div className="subtitle">
         <span>PRODUCTS</span>
-        <h2>Check What We Have</h2>
+        <h2>Look at Our Selection</h2>
       </div>
       <div className="flex gap-4 text-[clamp(20px,10px_+_2vw,26px)] md:gap-8 justify-center">
         {collections.map((collection, i) => (
