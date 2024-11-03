@@ -71,7 +71,7 @@ export default function AboutUs() {
                   </h2>
                   <p className="font-normal text-xl leading-8 text-gray-500 max-lg:px-10 max-lg:text-center max-w-2xl mx-auto">
                     Pagedone isn’t just a collection of components and
-                    guidelines; it's a philosophy. We go beyond aesthetics,
+                    guidelines; it&#39;s a philosophy. We go beyond aesthetics,
                     prioritizing accessibility, scalability, and usability.
                     Every element, from the tiniest detail to the grandest
                     layout, is meticulously crafted to enhance functionality and
