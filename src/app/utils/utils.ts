@@ -145,4 +145,3 @@ export const productsByType = {
 export const category = {
   circular_knit: {},
 };
-
