@@ -14,7 +14,7 @@ export default function SwiperSliderContainer({ products }: any) {
       breakpoints={{
         300: {
           slidesPerView: 1,
-          spaceBetween: 0,
+          spaceBetween: 100,
         },
         1000: {
           slidesPerView: 2,
