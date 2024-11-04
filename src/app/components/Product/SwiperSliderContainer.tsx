@@ -27,7 +27,6 @@ export default function SwiperSliderContainer({ products }: any) {
       }}
       modules={[Navigation, A11y]}
       spaceBetween={0}
-      slidesPerView={3}
       navigation
     >
       <div className="products-container">
